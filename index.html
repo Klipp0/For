@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <div class="filters">
+        <div class="title">Фильтры</div>
+        <div class="filters_list">
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"><p>Показать все</p></button>
+                <h1>Цвет</h1>
+                <button class="btn" onclick="filterSelection('white')"><p>Белый</p></button>
+                <button class="btn" onclick="filterSelection('black')"><p>Черный</p></button>
+                <h1>Цветность печати</h1>
+                <button class="btn" onclick="filterSelection('color')"><p>Цветная</p></button>
+                <button class="btn" onclick="filterSelection('white_and_black')"><p>черно-белая</p></button>
+                <h1>Производители</h1>
+                <button class="btn" onclick="filterSelection('deli')"><p>Deli</p></button>
+                <button class="btn" onclick="filterSelection('pantum')"><p>Pantum</p></button>
+                <button class="btn" onclick="filterSelection('canon')"><p>Canon</p></button>
+                <button class="btn" onclick="filterSelection('xerox')"><p>Xerox</p></button>
+              </div>
+        </div>
+    </div>
+    
+    <div class="container">
+
+        <!-- buttons to switch pages -->
+        <div class="wraps">
+            <button class="print">Принтеры</button>
+            <button class="kart">Картриджи</button>
+        </div>
+
+        <!-- search string -->
+        <div class="search_line">
+            <input type="search" placeholder="Поиск" class="search" id="search"> <button type="submit">Найти</button>
+        </div>
+        
+        <div class="information_box">
+
+            <div class="list" id="list">
+
+                <div class="printers white deli white_and_black" id="printers">
+                    <img class="printer1" src="img/119304_main_.jpg">
+                    <div class="data">
+                        <div class="name">Принтер лазерный Deli Laser P3100DN</div>
+                        <button id="more1" onclick="myFunction('MoreInfo')" class="more">Подробнее</button>
+                    </div>  
+                </div>
+
+                <div class="printers white pantum white_and_black" id="printers">
+                    <img class="printer1" src="img/119304_main_.jpg">
+                    <div class="data">
+                        <div class="name">Принтер струйный Pantum L1800</div>
+                        <button id="more2" onclick="myFunction('MoreInfoTwo')"  class="more">Подробнее</button>
+                    </div>  
+                </div>
+
+                <div class="printers black xerox white_and_black" id="printers">
+                    <img class="printer1" src="img/Printer1.jpg">
+                    <div class="data">
+                        <div class="name">Принтер лазерный Xerox FS-1060DN</div>
+                        <button id="more3" onclick="myFunction('MoreInfoThree')" class="more">Подробнее</button>
+                    </div>  
+                </div>
+
+                <div class="printers black canon color" id="printers">
+                    <img class="printer1" src="img/Printer1.jpg">
+                    <div class="data">
+                        <div class="name">Принтер лазерный цветной Canon Laser P3151DN</div>
+                        <button id="more4" onclick="myFunction()" class="more">Подробнее</button>
+                    </div>  
+                </div>
+
+                <div class="printers black canon color" id="printers">
+                    <img class="printer1" src="img/Printer1.jpg">
+                    <div class="data">
+                        <div class="name">Принтер лазерный цветной Canon Laser P3152DN</div>
+                           <button id="more5" onclick="myFunction()" class="more">Подробнее</button>
+                    </div>  
+                </div>
+
+                <div class="printers black xerox white_and_black" id="printers">
+                    <img class="printer1" src="img/Printer1.jpg">
+                    <div class="data">
+                        <div class="name">Принтер лазерный Xerox Laser P31432DN</div>
+                        <button id="more6" onclick="myFunction()" class="more">Подробнее</button>
+                    </div>  
+                </div>
+
+                <div class="printers black xerox white_and_black" id="printers">
+                    <img class="printer1" src="img/Printer1.jpg">
+                    <div class="data">
+                        <div class="name">Принтер лазерный Xerox Laser P3100DN</div>
+                        <button id="more7" onclick="myFunction()" class="more">Подробнее</button>
+                    </div>  
+                </div>
+
+                <div class="printers black deli color" id="printers">
+                    <img class="printer1" src="img/Printer1.jpg">
+                    <div class="data">
+                        <div class="name">Принтер лазерный Deli Laser P3165DN</div>
+                        <button id="more8" onclick="myFunction()" class="more">Подробнее</button>
+                    </div>  
+                </div>
+
+            </div>
+
+            <div class="information">
+                <!-- <img class="printer2" src="img/Printer1.jpg" alt=""> -->
+                <div class="info">
+                        <div id="MoreInfo" class="item first">
+                            <div class="photoitem">
+                                <img src="img/Printer1.jpg">
+                            </div>
+                            <div class="btn_info">
+                                Отремонтирован
+                            </div>
+                            <div class="TextInfo">
+                                <p>Тип: принтер лазерный</p>
+                                <p>Модель: Epson L1800</p>
+                                <p>Основной цвет: черный</p>
+                                <p>Дополнительный цвет: чёрный</p>
+                                <p>Технология печати: лазерная</p>
+                                <p>Цветность печати: черно-белая</p>
+                                <p>Максимальный формат печати: А4</p>
+                                <p>Процессор: 0.6ГГц</p>
+                                <p>Объём оперативной памяти: 128 МБ</p>
+                            </div>
+                        </div>
+                        <div id="MoreInfoTwo" class="item two">
+                            <div class="photoitem">
+                                <img src="https://c.dns-shop.ru/thumb/st1/fit/500/500/77ab96650a452016788ff5e1b713b4b7/5085bcff4901e2c475d9520d32213e94ef9c837b13a10bc76da9874533aa203e.jpg.webp">
+                            </div>
+                            <div class="btn_info">
+                                Отремонтирован
+                            </div>
+                            <div class="TextInfo">
+                                <p>Тип: принтер лазерный</p>
+                                <p>Модель: KYOCERA FS-1060DN</p>
+                                <p>Основной цвет: белый</p>
+                                <p>Дополнительный цвет: чёрный</p>
+                                <p>Технология печати: лазерная</p>
+                                <p>Цветность печати: черно-белая</p>
+                                <p>Максимальный формат печати: А4</p>
+                            </div>
+                        </div>
+                        <div id="MoreInfoThree" class="item three">
+                            <div class="photoitem">
+                                <img src="https://c.dns-shop.ru/thumb/st1/fit/500/500/ae80686fb84edab89488e62047ceeb9a/a4b3e21bb04608d10daed2428d615d2aa64eb9522d9c25c8087059af5ca26eda.jpg.webp">
+                            </div>
+                            <div class="btn_info">
+                                Отремонтирован
+                            </div>
+                            <div class="TextInfo">
+                                <p>Тип: принтер лазерный</p>
+                                <p>Модель: Deli Laser P3151DN</p>
+                                <p>Основной цвет: белый</p>
+                                <p>Дополнительный цвет: чёрный</p>
+                                <p>Технология печати: лазерная</p>
+                                <p>Цветность печати: черно-белая</p>
+                                <p>Максимальный формат печати: А4</p>
+                                <p>Процессор: 1.2ГГц</p>
+                                <p>Объём оперативной памяти: 256 МБ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
